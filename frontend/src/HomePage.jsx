@@ -1,8 +1,10 @@
 import React from 'react';
 import Footer from "./Components/footer/Footer";
+import { useNavigate } from 'react-router-dom';
 // import { useHistory } from 'react-router-dom';
 
 export default function Homepage() {
+  const navigate = useNavigate();
   return (
     <div className="dashboard">
       {/* Main Content of home screen */}
@@ -25,9 +27,11 @@ export default function Homepage() {
       {/* <Link to="/services">Services</Link> */}
       <section id="service-cards" className="service-cardss">
         <div class="servicetext">
-          <h2>Our New Services</h2>
+          <h2>Our Services</h2>
         </div>
         <div className="service-containers">
+
+          {/* PLUMBING SERVICE  */}
           <div className="services-card">
             <div className="services-main">
               <h3>Plumbing Repairs</h3>
@@ -35,10 +39,11 @@ export default function Homepage() {
             <div className="services-content">
               <h3>Plumbing Repairs</h3>
               <p>Avg. Project: ₹400-₹500</p>
-              <p>Experienced Professionals</p>
-              {/* <button className="services-btn">Book Now</button> */}
+              <button className="services-btn" onClick={() => { navigate('/service1') }}>Book Now</button>
             </div>
           </div>
+
+          {/* ELECTIRCAL SERVICE  */}
           <div className="services-card">
             <div className="service-img">
               <img src="images/electrical.jpeg" width="480" height="310" />
@@ -46,35 +51,11 @@ export default function Homepage() {
             <div className="services-content">
               <h3>Electrical Help</h3>
               <p>Avg. Project: ₹500-₹600</p>
-              <p>Experienced Professionals</p>
-              {/* <button className="services-btn">Book Now</button> */}
+              <button className="services-btn" onClick={() => { navigate('/service2') }}>Book Now</button>
+            </div>
+          </div>
 
-            </div>
-          </div>
-          <div className="services-card">
-            <div className="service-img">
-              <img src="images/cleaning.jpg" width="480" height="310" />
-            </div>
-            <div className="services-content">
-              <h3>Home Cleaning</h3>
-              <p>Avg. Project: ₹200-₹300</p>
-              <p>Experienced Professionals</p>
-              {/* <button className="services-btn">Book Now</button> */}
-            </div>
-          </div>
-        </div>
-        <div className="service-containers">
-          <div className="services-card">
-            <div className="service-img">
-              <img src="images/furniture.jpg" width="480" height="310" />
-            </div>
-            <div className="services-content">
-              <h3>Furniture Assembly</h3>
-              <p>Avg. Project: ₹100-₹200</p>
-              <p>Experienced Professionals</p>
-              {/* <button className="services-btn">Book Now</button> */}
-            </div>
-          </div>
+          {/* PAINTING SERVICE  */}
           <div className="services-card">
             <div className="service-img">
               <img src="images/painting.jpeg" width="480" height="310" />
@@ -82,10 +63,34 @@ export default function Homepage() {
             <div className="services-content">
               <h3>Painting</h3>
               <p>Avg. Project: ₹700-₹800</p>
-              <p>Experienced Professionals</p>
-              {/* <button className="services-btn">Book Now</button> */}
+              <button className="services-btn" onClick={() => { navigate('/service1') }}>Book Now</button>
             </div>
           </div>
+        </div>
+
+        <div className="service-containers">
+
+          <div className="services-card">
+            <div className="service-img">
+              <img src="images/cleaning.jpg" width="480" height="310" />
+            </div>
+            <div className="services-content">
+              <h3>Home Cleaning</h3>
+              <p>Avg. Project: ₹200-₹300</p>
+              <button className="services-btn" onClick={() => { navigate('/service1') }}>Book Now</button>
+            </div>
+          </div>
+          <div className="services-card">
+            <div className="service-img">
+              <img src="images/furniture.jpg" width="480" height="310" />
+            </div>
+            <div className="services-content">
+              <h3>Furniture Assembly</h3>
+              <p>Avg. Project: ₹100-₹200</p>
+              <button className="services-btn" onClick={() => { navigate('/service1') }}>Book Now</button>
+            </div>
+          </div>
+
           <div className="services-card">
             <div className="service-img">
               <img src="images/lifting.jpeg" width="480" height="310" />
@@ -93,10 +98,10 @@ export default function Homepage() {
             <div className="services-content">
               <h3>Heavy Lifting</h3>
               <p>Avg. Project: ₹200-₹300</p>
-              <p>Experienced Professionals</p>
-              {/* <button className="services-btn">Book Now</button> */}
+              <button className="services-btn" onClick={() => { navigate('/service1') }}>Book Now</button>
             </div>
           </div>
+
         </div>
       </section>
       <section className="book-info">

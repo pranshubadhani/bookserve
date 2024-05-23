@@ -27,9 +27,9 @@ function ElectricalHelp() {
                         <p>You need to find someone to lend a hand with electrical help,
                             but you don’t want to hire someone you can’t trust. After all, your home or office’s
                             electrical system is pretty important, and you can’t afford to gamble with it.
-                            Don’t worry - that’s why BookEazy is here!</p>
+                            Don’t worry - that’s why BookServe is here!</p>
                         <p>Offering a simple-to-use online platform chock-full of Service Providers with electrical experience,
-                            BookEazy is your go-to for virtually any electrical need you might have.
+                            BookServe is your go-to for virtually any electrical need you might have.
                             From rewiring a wall to swapping out light fixtures - Service Providers do it all.</p>
                         <p>
                             Don't short circuit trying to do it all on your own. Hire a Service Provider for electrical help today!

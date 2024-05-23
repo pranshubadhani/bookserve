@@ -41,6 +41,15 @@ export default function Navbar() {
                         <li>
                             <Link to="/service3">Painting</Link>
                         </li>
+                        <li>
+                            <Link to="/service4">Home Cleaning</Link>
+                        </li>
+                        <li>
+                            <Link to="/service5">Furniture Assembly</Link>
+                        </li>
+                        <li>
+                            <Link to="/service6">Heavy Lifting</Link>
+                        </li>
                     </ul>
                 </div>
             </li>

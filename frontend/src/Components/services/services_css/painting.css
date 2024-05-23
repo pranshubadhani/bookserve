@@ -1,4 +1,4 @@
-.banner2{
+.banner2 {
     min-height: 80vh;
     background-image: url(/images/painting.jpeg);
     /* background-repeat: no; */
@@ -7,7 +7,8 @@
     align-items: center;
     justify-content: center;
 }
-.banner-info{
+
+.banner-info {
     background-color: #fff;
     width: 600px;
     height: 300px;
@@ -17,23 +18,27 @@
     border-radius: 15px;
     /* justify-content: center; */
 }
-.banner-info h1{
+
+.banner-info h1 {
     font-size: 2.5rem;
 }
-.divider{
+
+.divider {
     /* color: black; */
     background-color: #750202;
 
     height: 2px;
     width: 100px;
 }
-.banner-info p{
+
+.banner-info p {
     max-width: 500px;
     font-size: 1.2rem;
     text-align: center;
     margin-bottom: 40px;
 }
-.service-btn{
+
+.service-btn {
     font-size: 1.2rem;
     width: 150px;
     color: #fff;
@@ -46,44 +51,50 @@
     cursor: pointer;
 
 }
+
 /* SERVICE INFORMATION */
-.service-info{
+.service-info {
     min-height: 50vh;
     background-color: rgb(214, 234, 251);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.service-wrap{
+
+.service-wrap {
     display: flex;
     align-items: center;
     /* background-color: rgb(228, 221, 221); */
     height: 500px;
     width: 1200px;
 }
-.service-txt{
+
+.service-txt {
     /* background-color: aquamarine; */
     display: flex;
     flex-direction: column;
     /* align-items: center; */
     justify-content: center;
 }
-.service-txt h1{
+
+.service-txt h1 {
     text-align: left;
 }
-.service-txt p{
+
+.service-txt p {
     font-size: 1.1rem;
     letter-spacing: 0.5px;
 }
 
-.service-img img{   
+.service-img img {
     /* background-color: bisque; */
     margin-left: 50px;
     max-width: 500px;
     max-height: 500px;
 }
+
 /* how it works */
-.how-it-works{
+.how-it-works {
     /* background-color: rgb(226, 239, 251); */
     /* background-color: antiquewhite; */
     background-color: aliceblue;
@@ -93,44 +104,52 @@
     justify-content: center;
 }
 
-.works-heading h1{
+.works-heading h1 {
     font-size: 2rem;
 }
-.how-works-content{
+
+.how-works-content {
     width: 500px;
     /* background-color: aqua; */
-    padding: 10px 10px 10px 50px;;
+    padding: 10px 10px 10px 50px;
+    ;
 }
-.choose-tasker{
+
+.choose-tasker {
     margin-top: 20px;
     /* background-color: beige; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.get-it-done{
+
+.get-it-done {
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
 }
+
 /* READY TO HIRE */
-.ready-to-hire{
+.ready-to-hire {
     /* background-color: aqua; */
     background-color: rgb(214, 234, 251);
     display: flex;
     justify-items: center;
     align-items: center;
 }
-.ready-img img{
+
+.ready-img img {
     margin: 30px 40px 30px 200px;
     width: 600px;
 }
-.ready-txt h1{
+
+.ready-txt h1 {
     font-size: 2rem;
 }
-.ready-txt .service-btn{
+
+.ready-txt .service-btn {
     width: 250px;
     background-color: black;
 }

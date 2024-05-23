@@ -109,42 +109,47 @@ export default function ServicemenRegister() {
                             <input type="text" id="email" placeholder="Enter email..." value={data.email} onChange={(e) => setData({ ...data, email: e.target.value })} />
                             <label>Phone:</label>
                             <input type="text" id="phone" placeholder="Enter phone..." value={data.phone} onChange={(e) => setData({ ...data, phone: e.target.value.trim() })} />
-                            <label>address:</label>
+                            <label>Address:</label>
                             <input type="text" id="address" placeholder="Enter address..." value={data.address} onChange={(e) => setData({ ...data, address: e.target.value })} />
                             <label>Location:</label>
                             <select id="location" value={data.location} onChange={(e) => setData({ ...data, location: e.target.value })}>
-                                <option value="" hidden>Select a location.</option>
+                                <option value="" hidden>Select a location</option>
                                 {locationArr.map((loc, i) => <option key={i} value={loc}>{loc}</option>)}
                             </select>
                             <label>Educational Qualification:</label>
                             <select id="qualification" value={data.qualification} onChange={(e) => setData({ ...data, qualification: e.target.value })}>
-                                <option value="" hidden>Select a qualification.</option>
+                                <option value="" hidden>Select a qualification</option>
                                 {qualificationsArr.map((qualification, i) => <option key={i} value={qualification}>{qualification}</option>)}
                             </select>
                             <label>Offered Services:</label>
-                            <select multiple id="servicesOffered" onChange={(e) => {
+                            <select id="servicesOffered" onChange={(e) => {
                                 let selectedServices = [];
                                 for (const op of e.target.options) {
                                     if (op.selected) { selectedServices.push({ service: op.value, name: op.textContent, fare: 0 }) }
                                 }
                                 setServicesOffered(selectedServices)
                             }} >
-                                <option value="" hidden>Select services.</option>
+                                <option value="" hidden>Select services</option>
                                 {categories.map((s, i) => <option key={i} value={s._id}>{s.name}</option>)}
                             </select>
-                            <div className="serviceEditor">
-                                {servicesOffered.map((s, i) =>
-                                    <div key={i}>
-                                        <span>{s.name}</span>
-                                        <input placeholder="enter your fare" type="number" onChange={(e) => {
-                                            let temp = servicesOffered;
-                                            temp[i] = { service: s.service, name: s.name, fare: Number(e.target.value) };
-                                            // console.log(temp);
-                                            setServicesOffered(temp);
-                                        }}></input>
-                                    </div>
-                                )}
-                            </div>
+                            {servicesOffered.length > 0 && (
+                                <div className="serviceEditor">
+                                    {servicesOffered.map((s, i) => (
+                                        <div key={i}>
+                                            <span>{s.name}</span>
+                                            <input
+                                                placeholder="Enter your fare"
+                                                type="number"
+                                                onChange={(e) => {
+                                                    let temp = [...servicesOffered];
+                                                    temp[i] = { service: s.service, name: s.name, fare: Number(e.target.value) };
+                                                    setServicesOffered(temp);
+                                                }}
+                                            ></input>
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
                             <label>Bio:</label>
                             <input type="text" id="bio" placeholder="enter bio..." value={data.bio} onChange={(e) => setData({ ...data, bio: e.target.value })} />
                             <label>Username:</label>
