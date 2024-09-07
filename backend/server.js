@@ -12,7 +12,18 @@ import { isServiceperson, isUser } from "./middlewares/auth.js";
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(cors({ credentials: true, origin: ["http://localhost:5173", "http://127.0.0.1:5173", "http://127.0.0.1:4173", "http://localhost:4173"] }));
+app.use(
+  cors({
+    credentials: true,
+    origin: [
+      "http://localhost:5173",
+      "http://127.0.0.1:5173",
+      "http://127.0.0.1:4173",
+      "http://localhost:4173",
+      "https://bookserve-frontend.onrender.com",
+    ],
+  })
+);
 app.use(cookieParser());
 dotenv.config();
 
