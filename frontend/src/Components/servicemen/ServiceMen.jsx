@@ -159,7 +159,7 @@ export default function ServiceMen() {
               </Select>
             </FormControl>
 
-            <div className="time-selection">
+            {/* <div className="time-selection">
               <div className="checkbox-1">
                 <input type="checkbox" />
                 <p>Morning (8am to 12pm)</p>
@@ -172,7 +172,7 @@ export default function ServiceMen() {
                 <input type="checkbox" />
                 <p>Evening (5pm to 9:30pm)</p>
               </div>
-            </div>
+            </div> */}
           </Stack>
           <hr className="horizontal-line"></hr>
           {/* <h4>Price</h4>

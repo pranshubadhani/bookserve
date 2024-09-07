@@ -46,6 +46,10 @@ body {
     letter-spacing: 2px;
 }
 
+.sign-out {
+    font-size: 40px;
+}
+
 .nav a, .nav span {
     color: inherit;
     text-decoration: none;
@@ -219,7 +223,7 @@ body {
     width: 430px;
     justify-content: center;
     align-items: center;
-    background-image: url(images/plumbing.jpeg);
+    /* background-image: url(images/plumbing.jpeg); */
     background-size: contain;
     position: relative;
     overflow: hidden;
@@ -267,18 +271,18 @@ body {
     margin-bottom: 1px;
 }
 
-.services-main h3 {
+/* .services-main h3 {
     font-size: 2rem;
     color: #023047;
     margin-top: 230px;
-    /* background-color: #d8c3a5af; */
+    background-color: #d8c3a5af;
     text-align: center;
     font-weight: 700;
 }
 
 .services-card:hover .services-main {
     display: none;
-}
+} */
 
 .services-content h3 {
     font-size: 2rem;

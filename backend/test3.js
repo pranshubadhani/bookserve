@@ -5,7 +5,7 @@
 // console.dir(result);    // Score: -2, Comparative: -0.666
 // import express from "express";
 // import bodyParser from "body-parser";
-import Sentiment from "sentiment"
+// import Sentiment from "sentiment"
 // import cors from "cors";
 
 // const app = express();
@@ -33,9 +33,9 @@ import Sentiment from "sentiment"
 //     return result;
 // }
 
-export var sentiment = new Sentiment();
-var answer = sentiment.analyze("this is bad");
-console.log(answer);
+// export var sentiment = new Sentiment();
+// var answer = sentiment.analyze("this is bad");
+// console.log(answer);
 
 // if(answer[0] > 0){
 //     console.log("Sentiment: Positive");

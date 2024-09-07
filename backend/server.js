@@ -27,7 +27,6 @@ const gateway = new braintree.BraintreeGateway({
 });
 
 await connectDB(process.env.Test_Database_URL);
-// await connectDB(process.env.Database_URL);
 
 app.get("/", (req, res) => {
   res.send("Server is active.");

@@ -55,9 +55,7 @@ export default function FinalBooking(){
                         </div>
                         <button className="add-des">Add Description</button>
                         <hr className="break"></hr>
-                        <div>
-                        <img src="/src/assets/logo.png"/>
-                        </div>
+                        
                         <p className="logo-para">Experience the convenience of booking your services online - anytime, anywhere.</p>
     
                     </div>

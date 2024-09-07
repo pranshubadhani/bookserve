@@ -9,6 +9,7 @@ export default function Navbar() {
     function signOut() {
         axios.get("/sign-out")
             .then(d => {
+                window.alert(`Log Out Successful`)
                 setUser(null);
                 navigate("/");
             })
@@ -41,7 +42,7 @@ export default function Navbar() {
                         <li>
                             <Link to="/service3">Painting</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to="/service4">Home Cleaning</Link>
                         </li>
                         <li>
@@ -49,7 +50,7 @@ export default function Navbar() {
                         </li>
                         <li>
                             <Link to="/service6">Heavy Lifting</Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </li>
@@ -72,7 +73,9 @@ export default function Navbar() {
                     </div>
                 </li>
                 :
-                <li onClick={signOut}>Sign Out</li>}
+                <li onClick={signOut}>
+                    <Link>Sign Out</Link>
+                </li>}
 
 
         </ul>
