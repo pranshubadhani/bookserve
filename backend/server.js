@@ -140,7 +140,11 @@ app.post("/sign-in/user", async (req, res) => {
     userLogin(username, password)
       .then((user) => {
         const token = jwt.sign({ username: username, role: "USER" }, process.env.JWT_SECRET);
-        res.status(200).cookie("token", token).json(user);
+        res.status(200).cookie("token", token,{
+          httpOnly: true,
+          secure: true,  // Use true if you are using HTTPS
+          sameSite: 'None'  // Required for cross-site cookies
+        }).json(user);
       })
       .catch((err) => {
         res.status(401).send(err.message);
