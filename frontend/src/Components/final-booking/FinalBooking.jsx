@@ -12,7 +12,7 @@ export default function FinalBooking(){
     // console.log(`user from context = ${user}`)
 
     function sendBookingRequest(){
-        axios.post("http://localhost:8000/api/new-booking",
+        axios.post("/api/new-booking",
         {
             service:booking.selectedService,
             serviceperson:booking.servicePerson,

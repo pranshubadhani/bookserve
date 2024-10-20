@@ -16,6 +16,8 @@ import { bookingModel } from "../models/bookingModel.js";
  * @param {String} phone
  * @param {String?} image_url
  */
+
+
 async function addUser(
   username,
   password,
@@ -53,7 +55,7 @@ async function addUser(
  * @param {String} location
  * @param {String} qualification
  * @param {String} bio
- * @param {Array} servicesOffered
+ * @param {Array} servicesOffered 
  * @param {String} username
  * @param {String} password
  * @param {String?} image_url

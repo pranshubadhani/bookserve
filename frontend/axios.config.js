@@ -1,4 +1,4 @@
 import axios from "axios";
-const hostname = "https://bookserve-backend.onrender.com";
+const hostname = "http://localhost:8000/";
 axios.defaults.baseURL = hostname;
 export default axios;

@@ -20,7 +20,7 @@ function ShowListOfServicers(props) {
           rating={person.rating}
           about={person.bio}
           username={person.username}
-          disableBooking={props.disableBooking}
+          disableBooking={props.disableBooking} 
           selectedService={props.selectedService}
           selectedDateTime={props.selectedDateTime}
         />

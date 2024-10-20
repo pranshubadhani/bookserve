@@ -48,7 +48,7 @@ export default function ClientRegister() {
             return;
         }
         if (!phone.trim().match(/^[0-9]{10}$/)) {
-            toast.error("Please enter valid phone (10-digit).");
+            toast.error("Please enter valid phone (10-digit)."); 
             return;
         }
         if (!email.trim().match(/\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b/gi)) {
