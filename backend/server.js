@@ -162,7 +162,14 @@ app.post("/sign-in/serviceperson", async (req, res) => {
     servicepersonLogin(username, password)
       .then((user) => {
         const token = jwt.sign({ username: username, role: "SERVICEPERSON" }, process.env.JWT_SECRET);
-        res.status(200).cookie("token", token, { httpOnly: true }).json(user);
+        res
+          .status(200)
+          .cookie("token", token, {
+            httpOnly: true,
+            secure: true, // Use true if you are using HTTPS
+            sameSite: "None", // Required for cross-site cookies
+          })
+          .json(user);
       })
       .catch((err) => {
         res.status(401).send(err.message);
